@@ -39,7 +39,7 @@ function Shoe({ ...props }) {
   useFrame((state) => {
     const t = state.clock.getElapsedTime()
     ref.current.rotation.set(0.0001 + Math.cos(t / 90) / 70, Math.sin(t / 4) / 20,0.04 -(1 + Math.sin(t / 90)) / 70)
-    ref.current.position.y = (0.1 + Math.sin(t / 2)) / 10
+    ref.current.position.y = ( Math.sin(t / 1)) / 8
   })
   return (
     <group {...props} dispose={null}>
